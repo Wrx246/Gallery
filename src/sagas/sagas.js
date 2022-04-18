@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { call, put, takeLatest, takeEvery } from 'redux-saga/effects';
-import { getDetailsAction, getImagesAction, GET_ASYNC_DETAILS, GET_ASYNC_IMAGES, GET_DETAILS } from '../store/reducers';
+import { getDetailsAction, getImagesAction, GET_ASYNC_DETAILS, GET_ASYNC_IMAGES } from '../store/reducers';
 
 
 async function getDetails(id) {

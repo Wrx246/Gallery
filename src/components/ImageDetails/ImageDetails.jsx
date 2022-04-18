@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import { Card, Container } from "react-bootstrap";
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { GET_ASYNC_DETAILS } from "../../store/reducers";
+import { Link } from "react-router-dom";
 import st from './ImageDetails.module.scss';
 
 
@@ -22,11 +23,18 @@ const ImageDetails = () => {
         <Container>
             <Card className={st.card__body}>
                 <Card.Body>
-                    <Card.Text>
-                        Title: {details.title}
-                        <br />
-                        Id: {details.id}
-                    </Card.Text>
+                    <Row>
+                        <Col>
+                            <Card.Text>
+                                Title: {details.title}
+                                <br />
+                                Id: {details.id}
+                            </Card.Text>
+                            <Link to={'/'}>
+                                <Button>Back</Button>
+                            </Link>
+                        </Col>
+                    </Row>
                 </Card.Body>
                 <Card.Img variant="bottom" src={details.url} />
             </Card>
