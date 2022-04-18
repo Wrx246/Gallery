@@ -24,4 +24,4 @@ export const imageReducer = (state = initialState, { type, payload }) => {
 export const getImagesAction = (payload) => ({ type: GET_IMAGES, payload })
 export const getAsyncImagesAction = () => ({ type: GET_ASYNC_IMAGES })
 export const getDetailsAction = (payload) => ({ type: GET_DETAILS, payload })
-export const getAsyncDetailsAction = (payload) => ({type: GET_ASYNC_DETAILS, payload})
+export const getAsyncDetailsAction = (payload) => ({ type: GET_ASYNC_DETAILS, payload })

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { getAsyncImagesAction, getImagesAction } from "../../store/reducers";
-import MyCard from "../../UI/MyCard";
+import MyCard from "../../UI/MyCard/MyCard";
 import st from './Home.module.scss';
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";

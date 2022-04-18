@@ -8,9 +8,11 @@ async function getDetails(id) {
     return resp
 }
 
+const delay = (ms) => new Promise( res => setTimeout(res, ms))
+
 function* getDetailsSaga(action) {
-    
     try {
+        yield delay(500)
         const resp = yield call(getDetails, action.payload)
         yield put(getDetailsAction(resp.data))
     } catch (e) {
@@ -20,6 +22,7 @@ function* getDetailsSaga(action) {
 
 function* getImagesSaga() {
     try {
+        yield delay(500)
         const resp = yield call(() => axios.get('https://jsonplaceholder.typicode.com/photos?_limit=24'));
         yield put(getImagesAction(resp.data));
     } catch (e) {
