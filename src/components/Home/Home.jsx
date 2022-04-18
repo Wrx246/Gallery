@@ -20,7 +20,7 @@ const Home = () => {
         <Container className={st.home__content}>
             <Row xs={4} md={6} className="g-24">
                 {image.map((image) => (
-                    <Col>
+                    <Col key={image.id}>
                         <Link to={`/${image.id}`}>
                             <MyCard key={image.id} url={image.url} />
                         </Link>
