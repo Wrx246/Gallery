@@ -5,8 +5,10 @@ import st from './MyCard.module.scss';
 
 
 const MyCard = () => {
+
+
     return (
-        <Card className={st.myCard} style={{width: '210px'}}>
+        <Card className={st.myCard} >
             <Card.Img className={st.myimg} src={Avatar} />
             <Button className={st.mybtn}>Details</Button>
         </Card>
