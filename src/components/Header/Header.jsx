@@ -11,8 +11,8 @@ const Header = () => {
                 <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                 <Navbar.Collapse id='responsive-navbar-nav'>
                     <Nav className='mr-auto'>
-                        <Nav.Link><Link to='/'>Home</Link></Nav.Link>
-                        <Nav.Link><Link to='/about'>About me</Link></Nav.Link>
+                        <Nav.Link as={Link} to='/'>Home</Nav.Link>
+                        <Nav.Link as={Link} to='/about'>About me</Nav.Link>
                         <div>
                         <Image
                             roundedCircle

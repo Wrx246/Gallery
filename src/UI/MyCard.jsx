@@ -1,18 +1,16 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
-import Avatar from '../Assets/Images/Avatar.jpg';
 import st from './MyCard.module.scss';
 
 
-const MyCard = () => {
-
-
+const MyCard = ({id, url}) => {
     return (
-        <Card className={st.myCard} >
-            <Card.Img className={st.myimg} src={Avatar} />
+        <Card key={id} className={st.myCard} >
+            <Card.Img className={st.myimg} src={url} />
             <Button className={st.mybtn}>Details</Button>
         </Card>
     )
+
 }
 
 export default MyCard;
