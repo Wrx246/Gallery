@@ -1,0 +1,23 @@
+.mybtn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    &:hover {
+        cursor: pointer;
+        z-index:555555 !important;
+    }
+}
+
+.myimg {
+    z-index: 1;
+    &:hover {
+        z-index: 0;
+    }
+}
+
+.myCard {
+    margin: 20px;
+}
