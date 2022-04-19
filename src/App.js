@@ -1,9 +1,8 @@
 import { lazy, Suspense } from 'react';
-import { Container } from 'react-bootstrap';
 import { Routes, Route } from 'react-router-dom';
-import st from './App.scss';
 import Header from './components/Header/Header';
 import Preloader from './UI/Preloader/Preloader';
+import './App.scss';
 
 const Home = lazy(() => import('./components/Home/Home'));
 const About = lazy(() => import('./components/About/About'));
